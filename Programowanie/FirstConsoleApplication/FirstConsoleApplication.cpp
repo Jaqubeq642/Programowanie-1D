@@ -12,9 +12,9 @@ int main()
 	std::cout << "\n";
 	std::cout << 59;//stała całkowitoliczbowa 
 	std::cout << "\n";
-	std::cout << -2.5;//stała rzeczywista
+	std::cout << -2.5 ;//stała rzeczywista
 	std::cout << "Pierwsza liczba " << 254 << " Kolejny tekst";
-
+	
 }
 
 
