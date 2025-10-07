@@ -1,136 +1,226 @@
 ﻿#include <iostream>
-
+int main()
 /*
+*.
+*.
+*.
+*.
+*.
 *.
 *. 
 *. 
 *. 
 *. 
-*. Program obliczający objętość kuli o promieniu r
-*. Program obliczający pole trapezu o podstawach a i b oraz wysokości h
-*. Program obliczający średnią ważoną trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
-*. Stwórz program, który pobiera od użytkownika długość w metrach i przelicza ją na centymetry i milimetry, wyświetlając wynik.
-*. Napisz program, który konwertuje wprowadzoną kwotę w jednej walucie na inną, korzystając z określonego kursu wymiany.
 */
 
 //Napisz program który wczyta liczbę od użytkownika i ją wyświetl na konsoli
 void task1()
-{ 
-    //wczytanie liczby
-           //deklaracja zmiennych          1
-           //pobranie liczby
-               //informacja co chcemy      2
-               //oczekiwanie na liczbę     3
+{
+	//wczytanie liczby
+		   //deklaracja zmiennych          1
+		   //pobranie liczby
+			   //informacja co chcemy      2
+			   //oczekiwanie na liczbę     3
 
-       //wyświetlenie na konsoli           4
+	   //wyświetlenie na konsoli           4
 
-       //1
-    int numberFromUser;//number_from_user
-    //2
-    std::cout << "Podaj liczbę całkowitą:\n";
-    //3
-    std::cin >> numberFromUser;
-    //4
-    std::cout << "Podałeś " << numberFromUser << "\n";
+	   //1
+	int numberFromUser;//number_from_user
+	//2
+	std::cout << "Podaj liczbę całkowitą:\n";
+	//3
+	std::cin >> numberFromUser;
+	//4
+	std::cout << "Podałeś " << numberFromUser << "\n";
 }
-
 //Program obliczający średnią arytmetyczną dwóch liczb.
 void task2()
 {
-    int firstNumber, secondNumber;
-    std::cout << "Podaj pierwszą liczbę:\n";    
-    std::cin >> firstNumber;
+	int firstNumber, secondNumber;
+	std::cout << "Podaj pierwszą liczbę:\n";
+	std::cin >> firstNumber;
 
 
-    std::cout << "Podaj drugą liczbę:\n";
-    std::cin >> secondNumber;
+	std::cout << "Podaj drugą liczbę:\n";
+	std::cin >> secondNumber;
 
-    int avg;
+	int avg;
 
-    avg = (firstNumber + secondNumber) / 2;
+	avg = (firstNumber + secondNumber) / 2;
 
-    std::cout << "Wynik średniej: " << avg << "/n";
+	std::cout << "Wynik średniej: " << avg << "/n";
 }
 //Program obliczający pole prostokąta.
 void task3()
 {
-    int sideA, sideB;
-    std::cout << "Podaj wartość pierwszego boku:\n";
-    std::cin >> sideA;
+	int sideA, sideB;
+	std::cout << "Podaj wartość pierwszego boku:\n";
+	std::cin >> sideA;
 
-    std::cout << "Podaj wartość drugiego boku:\n";
-    std::cin >> sideB;
+	std::cout << "Podaj wartość drugiego boku:\n";
+	std::cin >> sideB;
 
-    int area;
+	int area;
 
-    area = (sideA * sideB);
+	area = (sideA * sideB);
 
-    std::cout << "Wynik pola prostokąta: " << area << "\n";
+	std::cout << "Wynik pola prostokąta: " << area << "\n";
 }
 //Program obliczający objętość stożka.
 void task4()
 {
-    int coneHeight, ray, π;
-    std::cout << "Podaj promień stożka:\n";
-    std::cin >> ray;
+	int coneHeight, ray, π;
+	std::cout << "Podaj promień stożka:\n";
+	std::cin >> ray;
 
-    std::cout << "Podaj wysokość stożka:\n";
-    std::cin >> coneHeight;
-    
-    π = 3, 14;
+	std::cout << "Podaj wysokość stożka:\n";
+	std::cin >> coneHeight;
 
-    int bulk;
+	π = 3.14;
 
-    bulk = (π * ray * ray * coneHeight) / 3;
-    
-    std::cout << "Wynik objetość stożka: " << bulk << "\n";
+	int bulk;
+
+	bulk = (π * ray * ray * coneHeight) / 3;
+
+	std::cout << "Wynik objetość stożka: " << bulk << "\n";
 }
 //Program obliczający pole koła.
 void task5()
-{ 
-    int π, rayCircle;
-    std::cout << "Podaj promień koła:\n";
-    std::cin >> rayCircle;
-    
-    π = 3, 14;
+{
+	int π, rayCircle;
+	std::cout << "Podaj promień koła:\n";
+	std::cin >> rayCircle;
 
-    int areaCircle;
+	π = 3.14;
 
-    areaCircle = π * (rayCircle * rayCircle);
+	int areaCircle;
 
-    std::cout << "Wynik pola koła: " << areaCircle << "\n";
+	areaCircle = π * (rayCircle * rayCircle);
+
+	std::cout << "Wynik pola koła: " << areaCircle << "\n";
 }
 //Program obliczający wartość wyrażenia a^2 + b^2
 void task6()
 {
-    int valueA, valueB;
-    std::cout << "Podaj wartość a:\n";
-    std::cin >> valueA;
-     
-    std::cout << "Podaj wartość b:\n";
-    std::cin >> valueB;
+	int valueA, valueB;
+	std::cout << "Podaj wartość a:\n";
+	std::cin >> valueA;
 
-    int expressionValue;
+	std::cout << "Podaj wartość b:\n";
+	std::cin >> valueB;
 
-    expressionValue = (valueA * valueA) + (valueB * valueB);
+	int expressionValue;
 
-    std::cout << "Wynik wartość wyrazenia: " << expressionValue << "\n";
+	expressionValue = (valueA * valueA) + (valueB * valueB);
+
+	std::cout << "Wynik wartość wyrazenia: " << expressionValue << "\n";
 }
 //Program obliczający pole trójkąta o podstawie b i wysokości h
 void task7()
 {
-    int sideB, heightTriangle;
-    std::cout << "Podaj wartość boku b: \n";
-    std::cin >> heightTriangle;
+	int sideB, heightTriangle;
+	std::cout << "Podaj wartość boku b: \n";
+	std::cin >> sideB;
 
-    std::cout << "Podaj wysokość tr"
+	std::cout << "Podaj wysokość trójkąta: \n";
+	std::cin >> heightTriangle;
 
+	int area;
 
+	area = (sideB * heightTriangle) / 2;
 
+	std::cout << "Wynik pola trójkąta: " << area << "\n";
+}
+//Program obliczający objętość kuli o promieniu r
+void task8()
+{
+	int π, raySphere;
+	std::cout << "Podaj promień kuli:\n";
+	std::cin >> raySphere;
+	
+	π = 3.14;
+
+	int bulk;
+
+	bulk = (4 / 3 * π) * (raySphere * raySphere * raySphere);
+
+	std::cout << "Wynik objetość kuli: " << bulk << "\n";
+}
+//Program obliczający pole trapezu o podstawach a i b oraz wysokości h
+void task9()
+{
+	int sideA, sideB, heightTrapeze;
+	std::cout << "Podaj wartość boku a:\n";
+	std::cin >> sideA;
+	
+	std::cout << "Podaj wartość boku b:\n";
+	std::cin >> sideB;
+
+	std::cout << "Podaj wyskość trapezu:\n";
+	std::cin >> heightTrapeze;
+	
+	int area;
+
+	area = ( (sideA + sideB)  * heightTrapeze) * 1/2;
+
+	std::cout << "Wynik pola treapezu: " << area << "\n";
+}
+//Program obliczający średnią ważoną trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+void task10()
+{
+	int firstRating, secondRating, lastRating;
+	std::cout << "Podaj ocene z wagą 1: \n";
+	std::cin >> firstRating;
+
+	std::cout << "Podaj ocene z wagą 2: \n";
+	std::cin >> secondRating;
+
+	std::cout << "Podaj ocene z wagą 3: \n";
+	std::cin >> lastRating;
+	
+	int mean;
+
+	mean = (firstRating * 1 + secondRating * 2 + lastRating * 3) / 6;
+
+	std::cout << "Wynik średniej ważonej: " << mean << "\n";
+}
+//Stwórz program, który pobiera od użytkownika długość w metrach i przelicza ją na centymetry i milimetry, wyświetlając wynik.
+void task11()
+{
+	int metersFromUser;
+	std::cout << "Podaj długość w metrach: \n";
+	std::cin >> metersFromUser;
+
+	int recalculation;
+
+	recalculation = metersFromUser * 100;
+
+	std::cout << "Przeliczenie metrów na centymetry: " << recalculation << "\n";
+
+	recalculation = (metersFromUser * 100) * 10;
+
+	std::cout << "Przeliczenie centymetrów na milimetry: " << recalculation << "\n";
+}
+//Napisz program, który konwertuje wprowadzoną kwotę w jednej walucie na inną, korzystając z określonego kursu wymiany.
+void task12()
+{
+	int value€, PLN;
+	std::cout << "Podaj kwote euro \n";
+	std::cin >> value€;
+	
+	PLN = 4.26;
+
+	int exchange;
+
+	exchange = value€ * PLN;
+
+	std::cout << "Przelicznona kwota z euro na złotówki: " << exchange << "\n";	
 }
 int main()
 {
-    task7();
+	
+	setlocale(LC_CTYPE, "polish");
+	task12();
 }
 
 /*
@@ -157,9 +247,9 @@ long double - 12 bajtowa liczba rzeczywista, dokładność 19-20 cyfr po przecin
 Nazwa zmiennej - nazwa obszaru w pamięci, identyfikator
 Warunki niezbędne:
 * dozwolone znaki:
-    - alfabet angielski aA-zZ
-    - cyfry arabskie 0-9
-    - podkreślenie (podłoga) _
+	- alfabet angielski aA-zZ
+	- cyfry arabskie 0-9
+	- podkreślenie (podłoga) _
 * pierwszym znakiem nie może być cyfra
 * unikalny w swoim zakresie widoczności
 * nie może to być słowo kluczowe (zarezerwowane) danego języka
@@ -169,4 +259,6 @@ Warunki programistów:
 * jeśli wiele słów to w miejscu spacji podkreślenie lub zaczynając od drugiego
   słowa piszemy je z dużej litery
 * piszemy po angielsku
+
+ctrl c d 
 */
