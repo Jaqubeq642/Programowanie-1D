@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-int main()
+
 /*
 *.
 *.
@@ -7,13 +7,13 @@ int main()
 *.
 *.
 *.
-*. 
-*. 
-*. 
-*. 
+*.
+*.
+*.
+*.
 */
 
-//Napisz program który wczyta liczbę od użytkownika i ją wyświetl na konsoli
+//Napisz program który wczyta liczbę od użytkownika i ją wyświetl na konsoli.
 void task1()
 {
 	//wczytanie liczby
@@ -24,7 +24,7 @@ void task1()
 
 	   //wyświetlenie na konsoli           4
 
-	   //1
+	//1
 	int numberFromUser;//number_from_user
 	//2
 	std::cout << "Podaj liczbę całkowitą:\n";
@@ -69,7 +69,8 @@ void task3()
 //Program obliczający objętość stożka.
 void task4()
 {
-	int coneHeight, ray, π;
+	int coneHeight, ray;
+	float π;
 	std::cout << "Podaj promień stożka:\n";
 	std::cin >> ray;
 
@@ -87,7 +88,8 @@ void task4()
 //Program obliczający pole koła.
 void task5()
 {
-	int π, rayCircle;
+	int rayCircle;
+	float π;
 	std::cout << "Podaj promień koła:\n";
 	std::cin >> rayCircle;
 
@@ -134,7 +136,8 @@ void task7()
 //Program obliczający objętość kuli o promieniu r
 void task8()
 {
-	int π, raySphere;
+	int raySphere;
+	float π;
 	std::cout << "Podaj promień kuli:\n";
 	std::cin >> raySphere;
 	
@@ -168,19 +171,28 @@ void task9()
 //Program obliczający średnią ważoną trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
 void task10()
 {
-	int firstRating, secondRating, lastRating;
-	std::cout << "Podaj ocene z wagą 1: \n";
+	int firstRating, secondRating, lastRating, firstScales, secondScales, lastScales;
+	std::cout << "Podaj pierwszą ocene: \n";
 	std::cin >> firstRating;
 
-	std::cout << "Podaj ocene z wagą 2: \n";
+	std::cout << "Podaj wage pierszej oceny: \n";
+	std::cin >> firstScales;
+
+	std::cout << "Podaj drugą ocene: \n";
 	std::cin >> secondRating;
 
-	std::cout << "Podaj ocene z wagą 3: \n";
+	std::cout << "Podaj wage drugiej oceny: \n";
+	std::cin >> secondScales;
+
+	std::cout << "Podaj wage trzeciej oceny: \n";
 	std::cin >> lastRating;
+	 
+	std::cout << "Podaj wage trzeciej oceny: \n";
+	std::cin >> lastScales;
 	
 	int mean;
 
-	mean = (firstRating * 1 + secondRating * 2 + lastRating * 3) / 6;
+	mean = (firstRating * firstScales + secondRating * secondScales + lastRating * lastScales) / firstScales + secondScales + lastScales;
 
 	std::cout << "Wynik średniej ważonej: " << mean << "\n";
 }
@@ -204,15 +216,16 @@ void task11()
 //Napisz program, który konwertuje wprowadzoną kwotę w jednej walucie na inną, korzystając z określonego kursu wymiany.
 void task12()
 {
-	int value€, PLN;
+	int value€;
+	float Pln;
 	std::cout << "Podaj kwote euro \n";
 	std::cin >> value€;
 	
-	PLN = 4.26;
+	Pln = 4.26;
 
 	int exchange;
 
-	exchange = value€ * PLN;
+	exchange = value€ * Pln;
 
 	std::cout << "Przelicznona kwota z euro na złotówki: " << exchange << "\n";	
 }
@@ -220,7 +233,7 @@ int main()
 {
 	
 	setlocale(LC_CTYPE, "polish");
-	task12();
+	task10();
 }
 
 /*
