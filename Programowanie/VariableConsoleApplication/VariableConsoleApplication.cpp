@@ -1,17 +1,6 @@
 ﻿#include <iostream>
 
-/*
-*.
-*.
-*.
-*.
-*.
-*.
-*.
-*.
-*.
-*.
-*/
+
 
 //Napisz program który wczyta liczbę od użytkownika i ją wyświetl na konsoli.
 void task1()
@@ -184,7 +173,7 @@ void task10()
 	std::cout << "Podaj wage drugiej oceny: \n";
 	std::cin >> secondScales;
 
-	std::cout << "Podaj wage trzeciej oceny: \n";
+	std::cout << "Podaj trzeciej oceny: \n";
 	std::cin >> lastRating;
 	 
 	std::cout << "Podaj wage trzeciej oceny: \n";
@@ -192,7 +181,7 @@ void task10()
 	
 	int mean;
 
-	mean = (firstRating * firstScales + secondRating * secondScales + lastRating * lastScales) / firstScales + secondScales + lastScales;
+	mean = (firstRating * firstScales + secondRating * secondScales + lastRating * lastScales) / (firstScales + secondScales + lastScales);
 
 	std::cout << "Wynik średniej ważonej: " << mean << "\n";
 }
@@ -231,12 +220,13 @@ void task12()
 }
 int main()
 {
-	
+
 	setlocale(LC_CTYPE, "polish");
-	task10();
+	task12();
 }
 
 /*
+
 
 Zmienna - pewien obszar pamięci operacyjnej, w której można
 w danej chwili przechować tylko jedną daną
