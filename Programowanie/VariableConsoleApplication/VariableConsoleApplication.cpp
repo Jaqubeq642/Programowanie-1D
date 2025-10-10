@@ -129,7 +129,7 @@ void task8()
 	float π;
 	std::cout << "Podaj promień kuli:\n";
 	std::cin >> raySphere;
-	
+
 	π = 3.14;
 
 	int bulk;
@@ -144,16 +144,16 @@ void task9()
 	int sideA, sideB, heightTrapeze;
 	std::cout << "Podaj wartość boku a:\n";
 	std::cin >> sideA;
-	
+
 	std::cout << "Podaj wartość boku b:\n";
 	std::cin >> sideB;
 
 	std::cout << "Podaj wyskość trapezu:\n";
 	std::cin >> heightTrapeze;
-	
+
 	int area;
 
-	area = ( (sideA + sideB)  * heightTrapeze) * 1/2;
+	area = ((sideA + sideB) * heightTrapeze) * 1 / 2;
 
 	std::cout << "Wynik pola treapezu: " << area << "\n";
 }
@@ -175,10 +175,10 @@ void task10()
 
 	std::cout << "Podaj trzeciej oceny: \n";
 	std::cin >> lastRating;
-	 
+
 	std::cout << "Podaj wage trzeciej oceny: \n";
 	std::cin >> lastScales;
-	
+
 	int mean;
 
 	mean = (firstRating * firstScales + secondRating * secondScales + lastRating * lastScales) / (firstScales + secondScales + lastScales);
@@ -209,14 +209,14 @@ void task12()
 	float Pln;
 	std::cout << "Podaj kwote euro \n";
 	std::cin >> value€;
-	
+
 	Pln = 4.26;
 
 	int exchange;
 
 	exchange = value€ * Pln;
 
-	std::cout << "Przelicznona kwota z euro na złotówki: " << exchange << "\n";	
+	std::cout << "Przelicznona kwota z euro na złotówki: " << exchange << "\n";
 }
 int main()
 {
@@ -263,5 +263,5 @@ Warunki programistów:
   słowa piszemy je z dużej litery
 * piszemy po angielsku
 
-ctrl c d 
+ctrl k d
 */
