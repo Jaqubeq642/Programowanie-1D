@@ -222,11 +222,20 @@ int main()
 {
 
 	setlocale(LC_CTYPE, "polish");
-	task12();
+	task10();
 }
 
 /*
-
+* 
+Algotytm - skończony zbiór instrukcji, który rozwiązuje zadany problem.
+Określa też kolejność wynonywanych instrukcji.
+Zapis algorytmu:
+* rysunki
+* opis słowny
+* w punktach
+* schemat blokowy
+* kod źródłowy danego języka programowania
+* pseudokod
 
 Zmienna - pewien obszar pamięci operacyjnej, w której można
 w danej chwili przechować tylko jedną daną
