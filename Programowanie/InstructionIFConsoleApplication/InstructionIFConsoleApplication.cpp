@@ -1,6 +1,9 @@
 ﻿#include <iostream>
 
 /*
+
+DRY - don't
+
 Operator warunkowy:
 >		- większy
 <		- mniejszy
@@ -23,6 +26,7 @@ void task1()
 
 	if (number < 0)
 		std::cout << "Podana liczba jest ujemna\n";
+
 
 	if (number == 0)
 		std::cout << "Liczba nie jest dodatnia ani ujemna\n";
@@ -55,14 +59,33 @@ void task3()
 	int number;
 	std::cout << "Podaj liczbą całkowitą: \n";
 	std::cin >> number;
-
-
-
+	//wersja 1
+	if (number >= 1)
+	{ 
+		if (number < 10)
+			std::cout << "Liczba jest w zakresie <1;10)\n";
+		else
+			std::cout << "Liczba nie jest w zakresie <1;10)\n";
+	}
+	else
+	{
+		std::cout << "Liczba nie jest w zakresie <1;10)\n";
+	}
+	//wersja 2
+	if (number >= 1)
+		if (number < 10)
+			std::cout << "Liczba jest w zakresie <1;10)\n";
+		else
+			std::cout << "Liczba nie jest w zakresie <1;10)\n";
+	else
+		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 }
+
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task2();
+	task3();
+
 }
