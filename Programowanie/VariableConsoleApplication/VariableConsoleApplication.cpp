@@ -68,7 +68,7 @@ void task4()
 
 	π = 3.14;
 
-	int bulk;
+	float bulk;
 
 	bulk = (π * ray * ray * coneHeight) / 3;
 
@@ -84,7 +84,7 @@ void task5()
 
 	π = 3.14;
 
-	int areaCircle;
+	float areaCircle;
 
 	areaCircle = π * (rayCircle * rayCircle);
 
@@ -132,7 +132,7 @@ void task8()
 
 	π = 3.14;
 
-	int bulk;
+	float bulk;
 
 	bulk = (4 / 3 * π) * (raySphere * raySphere * raySphere);
 
@@ -212,7 +212,7 @@ void task12()
 
 	Pln = 4.26;
 
-	int exchange;
+	float exchange;
 
 	exchange = value€ * Pln;
 
@@ -222,7 +222,7 @@ int main()
 {
 
 	setlocale(LC_CTYPE, "polish");
-	task10();
+	task8();
 }
 
 /*
