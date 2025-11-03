@@ -1,6 +1,12 @@
 ﻿#include <iostream>
 
 /*
+*.
+*.
+*. 
+*. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
+*/
+/*
 
 DRY		- Don't Repeat Yourself (Nie Powtarzaj się)
 
@@ -26,6 +32,7 @@ T	F      F	   T	 F
 T	T	   T	   T	 F
 
 a && b || c c && d
+
 */
 
 //Napisz program, ktory wyświetli informacje czy liczba jest dodatnia czy nie
@@ -57,10 +64,10 @@ void task2()
 	reminderOfDivision = number % 2;
 
 	if (reminderOfDivision == 0);
-		std::cout << "Podana liczba jest parzysta\n";
+	std::cout << "Podana liczba jest parzysta\n";
 
 	if (!(reminderOfDivision == 0));
-		std::cout << "Podana liczba jest nieparzysta\n";
+	std::cout << "Podana liczba jest nieparzysta\n";
 
 	//--------------------------------------------------------
 	if (reminderOfDivision == 0)
@@ -75,7 +82,7 @@ void task3()
 	std::cin >> number;
 	//wersja 1
 	if (number >= 1)
-	{ 
+	{
 		if (number < 10)
 			std::cout << "Liczba jest w zakresie <1;10)\n";
 		else
@@ -94,10 +101,10 @@ void task3()
 	else
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 	//wersja 3
-	if (number >= 1	&& number < 10)		
-			std::cout << "Liczba jest w zakresie <1;10)\n";
-		else
-			std::cout << "Liczba nie jest w zakresie <1; 10)\n";
+	if (number >= 1 && number < 10)
+		std::cout << "Liczba jest w zakresie <1;10)\n";
+	else
+		std::cout << "Liczba nie jest w zakresie <1; 10)\n";
 	//wersja 4
 	if (number < 1 || number >= 10)
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
@@ -109,12 +116,77 @@ void task3()
 	else
 		std::cout << "Liczba jest w zakresie <1;10)\n";
 }
+void task4()
+{
+	int dividend, divisor;
+	std::cout << "Podaj dzielnik:\n";
+	std::cin >> dividend;
+	std::cout << "Podaj dzielną:\n";
+	std::cin >> divisor;
+
+	if (divisor != 0)
+	{
+		int quoitent = dividend / divisor;
+		std::cout << "Wynik dzielenia " << quoitent << "\n";
+	}
+	else
+		std::cout << "Dzzielenie przez zero!!!\n";
+}
+//Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe.Wyświetl odpowiedni komunikat.
+void task5()
+{
+	int firstNumber, secondNumber;
+	std::cout << "Podaj pierwszą liczbe:\n";
+	std::cin >> firstNumber;
+
+	std::cout << "Podaj drugą liczbe:\n";
+	std::cin >> secondNumber;
+
+	if (firstNumber == secondNumber)
+		std::cout << "Podane liczby są równe\n";
+	else
+		std::cout << "Podane liczby nie są równe\n";
+}
+//Napisz program, który poprosi użytkownika o podanie wieku i sprawdzi, czy osoba jest pełnoletnia. Wyświetl odpowiedni komunikat.
+void task6()
+{
+	int age;
+	std::cout << "Podaj swój wiek:\n";
+	std::cin >> age;
+
+	if (age >= 18)
+		std::cout << "Jesteś osobą pełnoletnią\n";
+	else
+		std::cout << "Jesteś osobą niepełnoletnią\n";
+}
+//Napisz program, który poprosi użytkownika o podanie liczby całkowitej i obliczy jej wartość bezwzględną. Wyświetl wynik.
+void task7()
+{
+	int number, absoluteValue;
+	std::cout << "Podaj liczbe całkowitą:\n";
+	std::cin >> number;
+
+	if (number < 0) {
 
 
+
+
+	}
+}
+//Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny.Wyświetl odpowiedni komunikat.
+void task8()
+{
+	int year;
+	std::cout << "Podaj rok:\n";
+	std::cin >> year;
+
+	
+
+}
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	 
-	task3();
+
+	task8();
 
 }

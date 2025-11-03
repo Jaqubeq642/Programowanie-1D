@@ -220,7 +220,6 @@ void task12()
 }
 int main()
 {
-
 	setlocale(LC_CTYPE, "polish");
 	task8();
 }
