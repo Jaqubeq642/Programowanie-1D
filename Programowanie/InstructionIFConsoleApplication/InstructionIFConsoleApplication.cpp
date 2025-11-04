@@ -1,16 +1,12 @@
 ﻿#include <iostream>
 
 /*
-*.
-*.
-*. 
-*. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
-*/
-/*
 
 DRY		- Don't Repeat Yourself (Nie Powtarzaj się)
 
 KISS	- Keep It Simple, Stupid (Trzymaj się prostoty głupcze)
+
+%		- Zwrot z reszty dzielenia dwóch liczb. 
 
 Operator warunkowy:
 >		- większy
@@ -167,11 +163,10 @@ void task7()
 	std::cin >> number;
 
 	if (number < 0) {
-
-
-
-
+		number = -number;
 	}
+	
+	std::cout << "Wartość bezwzględna tej liczby to: " << number << "\n";	
 }
 //Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny.Wyświetl odpowiedni komunikat.
 void task8()
@@ -180,13 +175,28 @@ void task8()
 	std::cout << "Podaj rok:\n";
 	std::cin >> year;
 
-	
+	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+		std::cout << "Rok jest przestępny: " << year << "\n";
+	else
+		std::cout << "Rok nie jest przestępny: " << year << "\n";
+}
+// Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni
+void task9()
+{
+	int numberFromUser;
+	std::cout << "Podaj liczbe całkowitą: \n";
+	std::cin >> numberFromUser;
 
+	if (numberFromUser % 3 == 0 && numberFromUser % 5 == 0) {
+		std::cout << "Liczba jest podzielna przez 3 i 5: " << numberFromUser << "\n";
+	}
+	else {
+		std::cout << "Liczba nie jest podzielna przez 3 i 5: " << numberFromUser << "\n";
+	}
 }
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task8();
-
+	task9();
 }
