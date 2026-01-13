@@ -1,5 +1,11 @@
 ﻿#include <iostream>
-
+/*
+* 
+* 
+* 
+* 
+* 
+*/
 void task1()
 {
 	int number;
@@ -88,14 +94,156 @@ void task2()
 
 	std::cout << "Gratulacje!!!\nZgadłeś liczbę\n";
 }
+void task3()
+{
+	//std::cout << "1, 2, 3, 4, 5, 6\n";
+	unsigned long long upperRange;
+	std::cout << "Podaj górny zakres większy bądź równy 1\n";
+	std::cin >> upperRange;
+	/*
+		std::cout << "1, ";
+		if (upperRange > 1)
+		{
+			std::cout << "2, ";
+			if (upperRange > 2)
+			{
+				std::cout << "3, ";
+				if (upperRange > 3)
+				{
+					std::cout << "4, ";
+					//...
+				}
+			}
+		}
+		std::cout << "\n";
+		*/
+
+	unsigned long long currentNumber = 0;
+	do
+	{
+		//currentNumber = currentNumber + 1;
+		//currentNumber += 1;
+		//currentNumber++;
+		++currentNumber;
+		std::cout << currentNumber << ", ";
+	} while (upperRange > currentNumber);
+
+	std::cout << "\n";
+}
+
+//Napisz program, który policzy sumę cyfr 
+// podanej przez użytkownika liczby.
+void task4()
+{
+	int number;
+	std::cout << "Podaj liczbę\n";
+	std::cin >> number;
+
+	int sum = 0;
+
+	do
+	{
+		int digit = number % 10;
+		sum = sum + digit;
+		number = number / 10;
+	} while (number != 0);
+
+	std::cout << "Suma cyfr: " << sum << "\n";
+}
+//Poproś użytkownika o podawanie liczb, aż wprowadzi zero. Oblicz sumę oraz średnię arytmetyczn wprowadzonych liczb.
+void task5()
+{
+	int number;
+	int sum = 0;
+	int count = 0;
+	do
+	{
+		std::cout << "Podaj liczbę\n";
+		std::cin >> number;
+		sum = sum + number;
+		count++;
+	} while (number != 0);
+
+	std::cout << "Suma wszystkich liczb: " << sum << "\n";
+	std::cout << "Średnia arytmrtuczna wszystkich liczb: " << sum / count << "\n";
+}
+//Napisz program, który poprosi użytkownika o wprowadzenie dowolnej liczby całkowitej. Następnie program powinien obliczyć i wyświetlić liczbę cyfr.
+void task6()
+{
+	int number;
+	std::cout << "Podaj liczbę całkowitą:\n";
+	std::cin >> number;
+	int digits = 0;
+
+	if (number == 0)
+		digits = 1;
+	else if (number < 0)
+		number = -number;
+	while (number > 0)
+		number /= 10;
+		digits++;
+		
+		std::cout << "liczba cyfr: " << digits << "\n";
+}
+//Program odlicza od zadanej liczby do zera (np. „Start za 5… 4… 3…”) i kończy z komunikatem „Start!”.
+/*
+#include<windows.h>
+Sleep(milliseconds);
+1000 milisekund = 1 sekunda
+*/
+void task7()
+{
+	int number;
+	std::cout << "Podaj liczbę całkowitą:\n";
+	std::cin >> number;
+
+	std::cout << "Start za ";
+
+	do
+	{
+		std::cout << number << "...";
+		number--;
+	} while (number >= 0);
+
+	if (number >= 0)
+	{
+		std::cout << "Start za ";
+
+		do
+		{
+			std::cout << number << "...";
+			//Sleep(1000);
+			number--;
+		} while (number >= 0);
+		std::cout << "Stop\n";
+	}
+	else
+
+}
+//Program wczytuje liczbę n i oblicza 2^n w pętli. Pyta, czy użytkownik chce obliczyć kolejną potęgę.
+void task8()
+{
+		int number;
+		std::cout << "Podaj liczbę całkowitą:\n";
+		std::cin >> number;
+
+		do
+		{
 
 
+		} while
+
+}
+//Program wczytuje liczby i znajduje największą z nich. Kończy, gdy użytkownik poda 0.
+void task9()
+{
 
 
+}
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task2();
+	task6();
 }
 
