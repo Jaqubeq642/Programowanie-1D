@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include<windows.h>
 /*
 * 
 * 
@@ -194,16 +195,11 @@ Sleep(milliseconds);
 void task7()
 {
 	int number;
-	std::cout << "Podaj liczbę całkowitą:\n";
-	std::cin >> number;
-
-	std::cout << "Start za ";
-
 	do
 	{
-		std::cout << number << "...";
-		number--;
-	} while (number >= 0);
+		std::cout << "Podaj liczbê:\n";
+		std::cin >> number;
+	} while (number < 0);
 
 	if (number >= 0)
 	{
@@ -211,39 +207,19 @@ void task7()
 
 		do
 		{
-			std::cout << number << "...";
-			//Sleep(1000);
+			std::cout << number << ".. ";
+			Sleep(1000);
 			number--;
 		} while (number >= 0);
 		std::cout << "Stop\n";
 	}
 	else
-
-}
-//Program wczytuje liczbę n i oblicza 2^n w pętli. Pyta, czy użytkownik chce obliczyć kolejną potęgę.
-void task8()
-{
-		int number;
-		std::cout << "Podaj liczbę całkowitą:\n";
-		std::cin >> number;
-
-		do
-		{
-
-
-		} while
-
-}
-//Program wczytuje liczby i znajduje największą z nich. Kończy, gdy użytkownik poda 0.
-void task9()
-{
-
-
+		std::cout << "Poda³eœ liczbê ujemn¹\n";
 }
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task6();
+	task8();
 }
 
