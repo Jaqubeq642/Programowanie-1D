@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11312.210 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstConsoleApplication", "FirstConsoleApplication\FirstConsoleApplication.vcxproj", "{C332179B-3EF4-425B-9E39-8367301F70F3}"
 EndProject
@@ -20,6 +20,16 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopWhileConsoleApplication", "LoopWhileConsoleApplication\LoopWhileConsoleApplication.vcxproj", "{28EA86B6-E3D9-4BC1-B2FE-BEAB18693901}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopForConsoleApplication", "LoopForConsoleApplication\LoopForConsoleApplication.vcxproj", "{30CCC1E6-FBE9-4808-95CF-6755D2C45A6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Collections", "04.Collections", "{0FA10A75-8865-4C7B-B754-0EB9130ABA6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Charakters", "01.Charakters", "{AB0F7D3B-8F67-4A88-B928-4A0F0CAF4C6F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CharactersConsoleApplication", "CharactersConsoleApplication\CharactersConsoleApplication\CharactersConsoleApplication.vcxproj", "{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Array", "02.Array", "{5B7DED94-8E4B-4CA2-85A5-C210ED26CCF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayConsoleApplication", "ArrayConsoleApplication\ArrayConsoleApplication.vcxproj", "{895D3794-01AD-482B-A65B-153647A2BE38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +87,22 @@ Global
 		{30CCC1E6-FBE9-4808-95CF-6755D2C45A6F}.Release|x64.Build.0 = Release|x64
 		{30CCC1E6-FBE9-4808-95CF-6755D2C45A6F}.Release|x86.ActiveCfg = Release|Win32
 		{30CCC1E6-FBE9-4808-95CF-6755D2C45A6F}.Release|x86.Build.0 = Release|Win32
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Debug|x64.ActiveCfg = Debug|x64
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Debug|x64.Build.0 = Debug|x64
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Debug|x86.ActiveCfg = Debug|Win32
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Debug|x86.Build.0 = Debug|Win32
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Release|x64.ActiveCfg = Release|x64
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Release|x64.Build.0 = Release|x64
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Release|x86.ActiveCfg = Release|Win32
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A}.Release|x86.Build.0 = Release|Win32
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Debug|x64.ActiveCfg = Debug|x64
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Debug|x64.Build.0 = Debug|x64
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Debug|x86.ActiveCfg = Debug|Win32
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Debug|x86.Build.0 = Debug|Win32
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Release|x64.ActiveCfg = Release|x64
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Release|x64.Build.0 = Release|x64
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Release|x86.ActiveCfg = Release|Win32
+		{895D3794-01AD-482B-A65B-153647A2BE38}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +114,10 @@ Global
 		{066DC209-26B3-4D85-8D94-7EE74F3F725F} = {BA91A77E-C340-4E60-A0F3-2B44F633149C}
 		{28EA86B6-E3D9-4BC1-B2FE-BEAB18693901} = {BA91A77E-C340-4E60-A0F3-2B44F633149C}
 		{30CCC1E6-FBE9-4808-95CF-6755D2C45A6F} = {BA91A77E-C340-4E60-A0F3-2B44F633149C}
+		{AB0F7D3B-8F67-4A88-B928-4A0F0CAF4C6F} = {0FA10A75-8865-4C7B-B754-0EB9130ABA6B}
+		{86CAC5F2-836B-4690-B19D-4CAE28E0F28A} = {AB0F7D3B-8F67-4A88-B928-4A0F0CAF4C6F}
+		{5B7DED94-8E4B-4CA2-85A5-C210ED26CCF2} = {0FA10A75-8865-4C7B-B754-0EB9130ABA6B}
+		{895D3794-01AD-482B-A65B-153647A2BE38} = {5B7DED94-8E4B-4CA2-85A5-C210ED26CCF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D980E1A-9AAB-4B82-87DA-E3F5091FB68B}
