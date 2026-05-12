@@ -85,7 +85,7 @@ void task1()
 
 	for (int i = 0; i < ARRAY_SIZE; i++)
 	{
-		std::cout << "Podaj liczbê:\n";
+		std::cout << "Podaj liczbę:\n";
 		std::cin >> numbers[i];
 	}
 
@@ -207,36 +207,79 @@ void task6()
 	{
 		std::cout << "grade" << i + 1 << ": ";
 		std::cin >> grades[i];
-		sum +=
+		sum += grades[i];
 	}
-}
-//W tablicy znajdują się oceny ucznia. Oblicz średnią arytmetyczną ocen.
-void task7()
-{
 
+	double average = sum / 10;
+	std::cout << "\nśrednia ocen wynosi: " << average << "\n";
 }
 //Dana jest tablica 10 liczb. Policz, ile elementów jest parzystych.
-void task8()
+void task7()
 {
+	int numbers[10];
+	int counter = 0;
 
+	std::cout << "Podaj 10 liczb:" << "\n";
+	for (int i = 0; i < 10; i++)
+	{
+		std::cout << "Podaj liczbe " << i + 1 << ": ";
+		std::cin >> numbers[i];
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		if (numbers[i] % 2 == 0)
+		{
+			counter++;
+		}
+	}
+	std::cout << "elementy parzyste:" << counter << "\n";
 }
 //Wczytaj do tablicy 5 liczb i wypisz je w odwrotnej kolejnoœci.
+void task8()
+{
+	int numbers[5];
+
+	std::cout << "Podaj 5 liczb:\n";
+	for (int i = 0; i < 5; i++)
+	{
+		std::cin >> numbers[i];
+	}
+
+	std::cout << "Liczby w odwrotnej kolejności:\n";
+
+	for (int i = 4; i >= 0; i--)
+	{
+		std::cout << numbers[i] << " ";
+	}
+}
+//Dana jest tablica liczb całkowitych. Sprawdż, czy w tablicy znajduje się liczba podana przez użytkownika.
 void task9()
 {
 
 }
-//Dana jest tablica liczb całkowitych. Sprawdż, czy w tablicy znajduje się liczba podana przez użytkownika.
+// W tablicy zapisano wiek 7 osób. Policz, ile osób jest pełnoletnich.
 void task10()
 {
+	int age[7];
+	int counter = 0;
 
+	std::cout << "Podaj wiek 7 osób:" << "\n";
+	for (int i = 0; i < 7; i++)
+	{
+		std::cout << "Podaj wiek " << i + 1 << ": ";
+		std::cin >> age[i];
+	}
+	for (int i = 0; i < 7; i++)
+	{
+		if (age[i] >= 18)
+		{
+			counter++;
+		}
+	}
+	std::cout << "liczba osób pełnoletnich:" << counter << "\n";
 }
-// W tablicy zapisano wiek 7 osób. Policz, ile osób jest pe³noletnich.
+//Dana jest tablica 5 liczb. Oblicz ę między najwiêkszym a najmniejszym elementem.
 void task11()
-{
-
-}
-//Dana jest tablica 5 liczb. Oblicz ró¿nicê miêdzy najwiêkszym a najmniejszym elementem.
-void task12()
 {
 
 }
@@ -244,5 +287,5 @@ int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task5();
+	task10();
 }
