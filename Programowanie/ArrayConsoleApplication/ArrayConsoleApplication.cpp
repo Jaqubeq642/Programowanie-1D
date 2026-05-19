@@ -234,7 +234,7 @@ void task7()
 	}
 	std::cout << "elementy parzyste:" << counter << "\n";
 }
-//Wczytaj do tablicy 5 liczb i wypisz je w odwrotnej kolejnoœci.
+//Wczytaj do tablicy 5 liczb i wypisz je w odwrotnej kolejności.
 void task8()
 {
 	int numbers[5];
@@ -255,7 +255,19 @@ void task8()
 //Dana jest tablica liczb całkowitych. Sprawdż, czy w tablicy znajduje się liczba podana przez użytkownika.
 void task9()
 {
+	int numbers[] = { 12, 45, 7, 23, 89 };
+	int target;
 
+	std::cout << "Podaj liczbe: ";
+	std::cin >> target;
+
+	for (int i = 0; i < 5; i++)
+	{
+		if (numbers[i] == target)
+		{
+			std::cout << "Tak, liczba jest w tablicy!\n";
+		}
+	}
 }
 // W tablicy zapisano wiek 7 osób. Policz, ile osób jest pełnoletnich.
 void task10()
@@ -278,10 +290,31 @@ void task10()
 	}
 	std::cout << "liczba osób pełnoletnich:" << counter << "\n";
 }
-//Dana jest tablica 5 liczb. Oblicz ę między najwiêkszym a najmniejszym elementem.
+//Dana jest tablica 5 liczb. Oblicz ę między największym a najmniejszym elementem.
 void task11()
 {
+	int numbers[] = { 12, 45, 7, 23, 89 };
 
+	int max = numbers[0];
+	int min = numbers[0];
+
+	for (int i = 1; i < 5; i++) 
+	{
+		if (numbers[i] > max) 
+		{
+			max = numbers[i];
+		}
+		if (numbers[i] < min) 
+		{
+			min = numbers[i];
+		}
+	}
+
+	int difference = max - min;
+
+	std::cout << "Najwieksza: " << max << "\n";
+	std::cout << "Najmniejsza: " << min << "\n";
+	std::cout << "Roznica wynosi: " << difference << "\n";
 }
 int main()
 {
