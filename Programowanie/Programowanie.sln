@@ -45,6 +45,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Base split", "01.Base sp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseSplitConsoleApplication", "BaseSplitConsoleApplication\BaseSplitConsoleApplication.vcxproj", "{54A68103-88BD-4056-B6B6-6DC96E630B86}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08.Structure", "08.Structure", "{F3AB274E-3008-42FE-9CCE-A45662879F64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.BasicStructure", "01.BasicStructure", "{DED42170-00A6-4655-9D19-1FEB2FE6BE44}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicStructureConsoleApplication", "BasicStructureConsoleApplication\BasicStructureConsoleApplication.vcxproj", "{49637350-1458-40AA-B4E0-BEA9DA0873D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +147,14 @@ Global
 		{54A68103-88BD-4056-B6B6-6DC96E630B86}.Release|x64.Build.0 = Release|x64
 		{54A68103-88BD-4056-B6B6-6DC96E630B86}.Release|x86.ActiveCfg = Release|Win32
 		{54A68103-88BD-4056-B6B6-6DC96E630B86}.Release|x86.Build.0 = Release|Win32
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Debug|x64.ActiveCfg = Debug|x64
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Debug|x64.Build.0 = Debug|x64
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Debug|x86.ActiveCfg = Debug|Win32
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Debug|x86.Build.0 = Debug|Win32
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Release|x64.ActiveCfg = Release|x64
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Release|x64.Build.0 = Release|x64
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Release|x86.ActiveCfg = Release|Win32
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +174,8 @@ Global
 		{490BEA25-0BAC-42DB-B066-75B91F5BC024} = {97D2214C-DD78-4A88-ADA9-18A62FC3D74A}
 		{F72646B1-DCA2-457E-8098-725F17546318} = {0E4C8906-732E-40FF-9EC5-4B2F4B897FD7}
 		{54A68103-88BD-4056-B6B6-6DC96E630B86} = {F72646B1-DCA2-457E-8098-725F17546318}
+		{DED42170-00A6-4655-9D19-1FEB2FE6BE44} = {F3AB274E-3008-42FE-9CCE-A45662879F64}
+		{49637350-1458-40AA-B4E0-BEA9DA0873D3} = {DED42170-00A6-4655-9D19-1FEB2FE6BE44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D980E1A-9AAB-4B82-87DA-E3F5091FB68B}

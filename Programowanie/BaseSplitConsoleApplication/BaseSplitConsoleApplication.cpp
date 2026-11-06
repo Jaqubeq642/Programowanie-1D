@@ -9,6 +9,7 @@ int main()
 	system("pause");
 }
 
+
 /*
 PROCES BUDOWANIA PROGRAMU C++ (MSVC / VISUAL STUDIO)
 
