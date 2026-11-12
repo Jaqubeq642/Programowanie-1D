@@ -46,5 +46,5 @@ Przyjmij poprawne dane wejściowe. Napisy wczytywane przez cin podawaj bez spacj
 
 int main()
 {
-	void task5();
+	void task6();
 }
